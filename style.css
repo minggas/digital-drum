@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background: hsl(173, 30%, 20%);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 8vh 10vw;
+}
+.drum-container{
+    width: 100%;
+    height: 100%; 
+    background-color: hsl(203, 21%, 20%);
+    border: 2px solid hsl(203, 40%, 10%);
+    border-radius: 15px;
+    box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px;   
+}
+.title{
+    height: 15%;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    color: hsl(203, 0%, 36%);
+    font-size: calc(0.5rem + 1vh);
+    font-weight: 700;
+    letter-spacing: 1rem;
+}
+.pad{
+    height: 85%;
+    padding: 2rem;
+    grid-gap: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.btn{
+    cursor: pointer;
+    min-width: 3rem;
+    margin: 0.2rem;
+    font-size: calc(0.3rem + 1vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.07s;
+    background-color: hsla(203, 25%, 74%, 0.7);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+}
+.btn kbd{
+    font-size: calc(1rem + 2vw);
+}
+.btn .sound{
+    text-transform: uppercase;
+}
+.on{
+    background-color: hsla(123, 65%, 36%, 0.5);
+    transform: translate(0px, 3px);
+    box-shadow: none;
+}
