@@ -12,6 +12,16 @@ html{
     height: 100vh;
     padding: 8vh 10vw;
 }
+#display{
+    text-align: center;
+    height: 6%;
+    width: 10rem;
+    margin: 0 auto;
+    background: hsl(200, 4%, 49%);
+    border: 3px inset hsl(203, 40%, 10%);
+    border-radius: 5px;
+    padding-top: 5px;
+}
 .drum-container{
     width: 100%;
     height: 100%; 
@@ -21,7 +31,7 @@ html{
     box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px;   
 }
 .title{
-    height: 15%;    
+    height: 10%;    
     text-align: center;
     display: flex;
     justify-content: center;
@@ -41,7 +51,7 @@ html{
     grid-template-rows: repeat(3, 1fr);
 }
 
-.btn{
+.drum-pad{
     cursor: pointer;
     min-width: 3rem;
     margin: 0.2rem;
@@ -56,10 +66,10 @@ html{
     border: none;
     box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
 }
-.btn kbd{
+.drum-pad kbd{
     font-size: calc(1rem + 2vw);
 }
-.btn .sound{
+.drum-pad .sound{
     text-transform: uppercase;
 }
 .on{
